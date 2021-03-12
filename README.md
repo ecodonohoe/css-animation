@@ -1,2 +1,2 @@
 # css-animation
-Repo for practicing tips and trips in css.
+Repo for practicing tips and tricks in css.
