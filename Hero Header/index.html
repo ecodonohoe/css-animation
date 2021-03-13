@@ -4,6 +4,23 @@
     <title>Hero Header</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in .6s ease-out forwards;
+  opacity: 0;
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -23,46 +40,7 @@ body, html {
   background-size: cover;
   clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
-}
-
-h1{
-    
-    padding-top: 80px;
-    text-align: center;
-    margin: 0 auto;
-    color:whitesmoke;
-    font-size: 80px;
-    font-weight: bold;
-
-}
-h3{
-    padding-top: 70px;
-    text-align: center;
-    margin: 0 auto;
-    color:whitesmoke;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#container {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 130px;
-
-    
-    
-}
-
-a{
-    padding: 10px;
-    font-size: 40px;
-    background-color:rgb(77, 15, 15);
-    color:#f5f5f5;
-    
-    border-radius: 20px;
-    text-decoration: none;
-    
+  
 }
 
 #geo{
@@ -70,21 +48,69 @@ a{
     width:180px;
     margin:0 auto;
     padding-top:60px;
+    animation-delay: 0.6s;
     
 }
+
+#heading{
+    
+    padding-top: 80px;
+    text-align: center;
+    margin: 0 auto;
+    color:whitesmoke;
+    font-size: 80px;
+    font-weight: bold;
+    animation-delay: 0.8s;
+    
+
+}
+
+#sub{
+    padding-top: 70px;
+    text-align: center;
+    margin: 0 auto;
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    animation-delay: 1s;
+}
+
+#container {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 140px;
+    
+
+    
+    
+}
+
+#link{
+    padding: 10px;
+    font-size: 40px;
+    background-color:rgb(77, 15, 15);
+    color:#f5f5f5; 
+    border-radius: 20px;
+    text-decoration: none;
+    animation-delay: 1.2s;
+    
+}
+
+
 </style>
 </head>
 <body>
 
 <div class="bg">
-    <img id="geo" src="geometric.svg">
-    <h1>Your awesome landing page</h1>
-    <h3>A USEFUL PLACE TO START YOUR PROJECT</h3>
+    <img id="geo" class="animate-pop-in" src="geometric.svg">
+    <h1 id="heading" class="animate-pop-in">Your awesome landing page</h1>
+    <h3 id="sub" class="animate-pop-in">A USEFUL PLACE TO START YOUR PROJECT</h3>
 
 </div>
 
 <div id="container">
-    <a href="">Start today</a>
+    <a id="link" class="animate-pop-in" href="">Start today</a>
 </div>
 
 
