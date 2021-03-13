@@ -15,7 +15,7 @@ body, html {
   background-image: url("image.jpg");
 
   /* Full height */
-  height: 70%; 
+  height: 85%; 
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -27,44 +27,66 @@ body, html {
 
 h1{
     
-    padding-top: 300px;
+    padding-top: 80px;
     text-align: center;
     margin: 0 auto;
     color:whitesmoke;
-    font-size: 70px;
+    font-size: 80px;
     font-weight: bold;
 
 }
 h3{
-    padding-top: 50px;
+    padding-top: 70px;
     text-align: center;
     margin: 0 auto;
     color:whitesmoke;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
 
-#container{
-    position:absolute;
-    
-    padding-top: 30px;
+#container {
+    width: 100%;
     text-align: center;
-    margin: 0 auto;
+    position: absolute;
+    bottom: 130px;
+
+    
+    
 }
-button{
-    border-radius: 30%;
+
+a{
+    padding: 10px;
     font-size: 40px;
+    background-color:rgb(77, 15, 15);
+    color:#f5f5f5;
+    
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+#geo{
+    display: block;
+    width:180px;
+    margin:0 auto;
+    padding-top:60px;
+    
 }
 </style>
 </head>
 <body>
 
 <div class="bg">
-
+    <img id="geo" src="geometric.svg">
     <h1>Your awesome landing page</h1>
     <h3>A USEFUL PLACE TO START YOUR PROJECT</h3>
 
 </div>
+
+<div id="container">
+    <a href="">Start today</a>
+</div>
+
 
 
 </body>
